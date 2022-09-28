@@ -2,91 +2,50 @@
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        sotearCor()
         If Not Page.IsPostBack Then
-            'GetClientes()
         End If
     End Sub
 
-#Region "Clientes"
 
-    'Protected Sub rptClientes_ItemDataBound(sender As Object, e As RepeaterItemEventArgs)
-    '    Dim rptPedidos As Repeater = e.Item.FindControl("rptPedidos")
-    '    Dim hddCdcliente As HiddenField = e.Item.FindControl("hddCdcliente")
+    Sub sotearCor()
+        Dim listaCor As List(Of String) = New List(Of String)
+        listaCor.Add("#940533")
+        listaCor.Add("#f5061d")
+        listaCor.Add("#ff8800")
+        listaCor.Add("#ffb300")
+        listaCor.Add("#018790")
+        listaCor.Add("#ff00aa")
+        listaCor.Add("#e2ddd9")
+        listaCor.Add("#8fbe00")
 
-    '    GetPedidos(hddCdcliente.Value, rptPedidos)
-    'End Sub
+        listaCor.Sort()
 
-    'Sub GetClientes()
-    '    ' Dim clientes As DataTable = Select_("select * from clientes order by nmcliente")
-    '    'rptClientes.DataSource = clientes
-    '    rptClientes.DataBind()
+        'divs
+        divCabecalho.Attributes.Add("style", " height: 130px;  width: 100%;  position: absolute;  background:" & listaCor(0))
+        divBanners.Attributes.Add("style", "background:" & listaCor(1))
+        divSobre.Attributes.Add("style", "background:" & listaCor(2))
+        divDiferenciais.Attributes.Add("style", "background:" & listaCor(3))
+        divCardapio.Attributes.Add("style", "background:" & listaCor(4))
+        divLocalizacao.Attributes.Add("style", "background:" & listaCor(5))
+        divContato.Attributes.Add("style", "background:" & listaCor(6))
+        divFinal.Attributes.Add("style", "background:" & listaCor(7))
 
-    '    '  lblTotalClientes.Text = clientes.Rows.Count
-    '    divClienteEdit.Visible = False
-    'End Sub
+        'letras
+        divS1.Attributes.Add("style", "color:" & listaCor(0))
+        divE1.Attributes.Add("style", "color:" & listaCor(1))
+        divM.Attributes.Add("style", "color:" & listaCor(2))
+        divE2.Attributes.Add("style", "color:" & listaCor(3))
+        divA1.Attributes.Add("style", "color:" & listaCor(4))
+        divN.Attributes.Add("style", "color:" & listaCor(5))
+        divD1.Attributes.Add("style", "color:" & listaCor(6))
+        divO.Attributes.Add("style", "color:" & listaCor(7))
+        divV.Attributes.Add("style", "color:" & listaCor(0))
+        divI.Attributes.Add("style", "color:" & listaCor(1))
+        divD2.Attributes.Add("style", "color:" & listaCor(2))
+        divA2.Attributes.Add("style", "color:" & listaCor(3))
+        divS2.Attributes.Add("style", "color:" & listaCor(4))
 
-    'Protected Sub bttClienteInserir_Click(sender As Object, e As EventArgs)
-    '    '   Insert("insert into clientes set nmcliente = '" & txtClienteNome.Text & "', idade = " & txtClienteIdade.Text)
-    '    GetClientes()
-    'End Sub
-
-    'Protected Sub bttClienteAtualizar_Click(sender As Object, e As EventArgs)
-    '    '  Update("update clientes set nmcliente = '" & txtClienteNomeEdit.Text & "', idade = " & txtClienteIdadeEdit.Text & " where cdcliente = " & lblClienteCod.Text)
-    '    txtClienteNomeEdit.Text = ""
-    '    txtClienteIdadeEdit.Text = ""
-    '    GetClientes()
-    'End Sub
-
-    'Protected Sub bttClienteExcluir_Command(sender As Object, e As CommandEventArgs)
-    '    '   Delete("delete from clientes where cdcliente = " & e.CommandArgument)
-    '    '  Delete("delete from pedidos where cdcliente = " & e.CommandArgument)
-    '    '  GetClientes()
-    'End Sub
-
-    'Protected Sub bttClienteEditar_Command(sender As Object, e As CommandEventArgs)
-    '    ' Dim cliente As DataTable = Select_("select * from clientes where cdcliente = " & e.CommandArgument)
-    '    txtClienteNomeEdit.Text = cliente.Rows(0).Item("nmcliente")
-    '    txtClienteIdadeEdit.Text = cliente.Rows(0).Item("idade")
-    '    lblClienteCod.Text = cliente.Rows(0).Item("cdcliente")
-    '    divClienteEdit.Visible = True
-    'End Sub
-
-#End Region
-
-#Region "Pedidos"
-
-    'Sub GetPedidos(cdcliente As Integer, ByRef repeater As Repeater)
-    '    Dim pedidos As DataTable = Select_("select * from pedidos p inner join clientes c on c.cdcliente = p.cdcliente and c.cdcliente = " & cdcliente & " order by nmcliente")
-    '    repeater.DataSource = pedidos
-    '    repeater.DataBind()
-    '    repeater.Visible = pedidos.Rows.Count > 0
-    'End Sub
-
-    'Protected Sub bttPedidoExcluir_Command(sender As Object, e As CommandEventArgs)
-    '    Delete("delete from pedidos where cdpedido = " & e.CommandArgument)
-    '    GetClientes()
-    'End Sub
-
-    'Protected Sub bttPedidoEditar_Command(sender As Object, e As CommandEventArgs)
-    '    Dim pedido As DataTable = Select_("select * from pedidos where cdpedido = " & e.CommandArgument)
-    '    txtPedidoValor.Text = pedido.Rows(0).Item("valorpedido")
-    '    lblPedidoCod.Text = pedido.Rows(0).Item("cdpedido")
-    '    divClienteEdit.Visible = True
-    'End Sub
-
-    'Protected Sub bttPedidoInserir_Click(sender As Object, e As EventArgs)
-    '    Insert("insert into pedidos set cdcliente = " & lblClienteCod.Text & ", valorpedido = " & txtPedidoValor.Text.Replace(",", ".") & ", datapedido = now()")
-    '    GetClientes()
-    'End Sub
-
-    'Protected Sub bttPedidoAtualizar_Click(sender As Object, e As EventArgs)
-    '    Update("update pedidos set valorpedido = " & txtPedidoValor.Text.Replace(",", ".") & " where cdpedido = " & lblPedidoCod.Text)
-    '    txtClienteNomeEdit.Text = ""
-    '    txtClienteIdadeEdit.Text = ""
-    '    GetClientes()
-    'End Sub
-
-
-#End Region
+    End Sub
 
 End Class

@@ -4,6 +4,30 @@ body { font-family: Ubuntu; margin: 0px; padding: 0px; background-color: #EEE; }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.table-hover > tbody > tr:hover { background-color: #010101 !important; }
+
+
+.divQuadrado { background: white; width: 33% !important; position: absolute !important; display: block; top: 15%; left: 1%; border-radius: 10px; rotate: 0deg; box-shadow: 2px 4px 15px 10px black; }
+.divLetras { font-size: 30px; rotate: 0deg; top: 10px; display: block; }
+.divInfo { rotate: 0deg; top: 1px; }
+.divElementos { display: block; left: 34%; top: 20%; font-size: 26px; }
+.lblMenu { }
+
+
+
+
+
+#menu-h { /* background-color: rgb(37, 37, 39); */ }
+    #menu-h ul { list-style: none; padding: 0; }
+        #menu-h ul li { display: inline; transition: 1s; }
+            #menu-h ul li a { color: #FFF; padding: 20px; display: inline-block; text-decoration: none; transition: 1s; }
+                #menu-h ul li a:hover { background-color: #ffb300; transition: 0.5s; border-radius: 51px; }
+/*            #menu-h ul li:last-child a { float: right; background-color: rgb(24, 139, 233); }
+*/
+
+
+
+
 .page-header { padding-bottom: 5px; margin: 0px 0px 10px 0px; border-bottom: 1px solid #c7c7c7; }
     .page-header a { color: white; text-decoration: none; }
         .page-header a:hover { color: black; text-decoration: none; }
