@@ -158,6 +158,15 @@ Partial Public Class index
     Protected WithEvents divBanners As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
+    '''Controle btnSaibaMais.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents btnSaibaMais As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Controle divSobre.
     '''</summary>
     '''<remarks>

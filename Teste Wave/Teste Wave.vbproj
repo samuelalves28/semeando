@@ -96,6 +96,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\contact-form.css" />
     <Content Include="css\StyleSheet.css" />
+    <Content Include="img\Matrículas-e-rematrículas-1024x580.jpg" />
     <Content Include="index.aspx" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\JavaScript.js" />

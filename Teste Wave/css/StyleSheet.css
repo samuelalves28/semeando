@@ -7,13 +7,17 @@ body { font-family: Ubuntu; margin: 0px; padding: 0px; background-color: #EEE; }
 .table-hover > tbody > tr:hover { background-color: #010101 !important; }
 
 
-.divQuadrado { background: white; width: 33% !important; position: absolute !important; display: block; top: 15%; left: 1%; border-radius: 10px; rotate: 0deg; box-shadow: 2px 4px 15px 10px black; }
+.divQuadrado { background: white; width: 35% !important; position: absolute !important; display: block; top: 11%; left: 1%; border-radius: 10px; rotate: 0deg; box-shadow: 2px 4px 15px 10px black; }
 .divLetras { font-size: 30px; rotate: 0deg; top: 10px; display: block; }
 .divInfo { rotate: 0deg; top: 1px; }
-.divElementos { display: block; left: 34%; top: 20%; font-size: 26px; }
+.divElementos { display: block; left: 37%; top: 20%; font-size: 22px; }
 .lblMenu { }
 
-
+.placeBannerBlocoLeft { width: 100%; float: left; display: block; max-width: 100%; }
+.container { padding-right: 0px !important; padding-left: 0px !important; margin-left: 0px !important; }
+.divCabecalho { position: fixed !important; top: 0px; left: 0px; margin-bottom: 0px !important; z-index: 999; height: 17%; }
+.sessoes { padding-top: 115px; padding-bottom: 115px; }
+.btnSaibaMais { z-index: 999; top: 75%; display: block !important; position: absolute; left: 45%; width: 12%; font-size: 25px !important; border-radius: 40% !important; background-color: #018790 !important; }
 
 
 
