@@ -16,8 +16,8 @@ body { font-family: Ubuntu; margin: 0px; padding: 0px; background-color: #EEE; }
 .placeBannerBlocoLeft { width: 100%; float: left; display: block; max-width: 100%; }
 .container { padding-right: 0px !important; padding-left: 0px !important; margin-left: 0px !important; }
 .divCabecalho { position: fixed !important; top: 0px; left: 0px; margin-bottom: 0px !important; z-index: 999; height: 17%; }
-.sessoes { padding-top: 115px; padding-bottom: 115px; }
-.btnSaibaMais { z-index: 999; top: 75%; display: block !important; position: absolute; left: 45%; width: 12%; font-size: 25px !important; border-radius: 40% !important; background-color: #018790 !important; }
+.sessoes { padding-top: 115px; padding-bottom: 10px; }
+.btnSaibaMais { z-index: 993; top: 75%; display: block !important; position: absolute; left: 45%; width: 12%; font-size: 25px !important; border-radius: 40% !important; background-color: #018790 !important; }
 
 
 

@@ -7,7 +7,7 @@
     <asp:ScriptManager runat="server" />
 
     <asp:UpdatePanel runat="server">
-        <ContentTemplate>
+        <contenttemplate>
             <div class="">
                 <div id="divCabecalho" runat="server" class="col-xs-12 divCabecalho container">
                     <div id="divQuadrado" runat="server" class="col-xs-4 divQuadrado">
@@ -36,27 +36,66 @@
                         <nav id="menu-h">
                             <ul>
                                 <li><a href="#">Início</a> </li>
-                                <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Diferenciais</a></li>
-                                <li><a href="#">Localização</a></li>
-                                <li><a href="#">Cardápio</a></li>
+                                <li><a href="#divSobre">Sobre</a></li>
+                                <li><a href="#divDiferenciais">Diferenciais</a></li>
+                                <li><a href="#divCardapio">Cardápio</a></li>
+                                <li><a href="#divLocalizacao">Localização</a></li>
                                 <li><a href="#">Contato</a></li>
                             </ul>
                         </nav>
 
                     </div>
                 </div>
+
+                <%--Banner--%>
                 <div id="divBanners" class="col-xs-12 container sessoes" runat="server">
                     <img src="/img/Matrículas-e-rematrículas-1024x580.jpg" class="placeBannerBlocoLeft" />
-                    <asp:Button runat="server" CssClass="btn btn-primary btnSaibaMais"  Text="Saiba mais" ID="btnSaibaMais" OnClick="saibaMaisBanner_Click" />
+                    <asp:Button runat="server" CssClass="btn btn-primary btnSaibaMais" Text="Saiba mais" ID="btnSaibaMais" OnClick="saibaMaisBanner_Click" />
                 </div>
-                <div id="divSobre" runat="server"></div>
-                <div id="divDiferenciais" runat="server"></div>
-                <div id="divCardapio" runat="server"></div>
-                <div id="divLocalizacao" runat="server"></div>
+                <div id="divSobre" runat="server" class="col-xs-12">
+                    <div class=" col-xs-4">
+                        <img src="/img/2020-11-ensino-infantil-img-001-19112020.png" class="" />
+                    </div>
+                    <div class="col-xs-8" style="color: white;">
+                        <h3>Sobre</h3>
+                        <hr />
+                        <label>tefdiohifod dfh ud</label>
+                    </div>
+                </div>
+
+                <%--Diferenciais--%>
+                <div id="divDiferenciais" runat="server" class="col-xs-12">
+                    <div class=" col-xs-4">
+                        <img src="/img/2020-11-ensino-infantil-img-001-19112020.png" class="" />
+                    </div>
+                    <div class="col-xs-8" style="color: white;">
+                        <h3>Diferenciais</h3>
+                        <hr />
+                        <label>tefdiohifod dfh ud</label>
+                    </div>
+                </div>
+
+                <%--Cardapio--%>
+                <div id="divCardapio" runat="server" class="col-xs-12">
+                    <div class=" col-xs-4">
+                        <img src="/img/2020-11-ensino-infantil-img-001-19112020.png" class="" />
+                    </div>
+                    <div class="col-xs-8" style="color: white;">
+                        <h3>Cardapio</h3>
+                        <hr />
+                        <label>tefdiohifod dfh ud</label>
+                    </div>
+                </div>
+
+                <%--Localizacao--%>
+                <div id="divLocalizacao" runat="server" class="col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30707.586015343557!2d-48.04322237935568!3d-15.833020956626257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a326b07233ecd%3A0x77f692f28d1b9f0e!2s%C3%81guas%20Claras%2C%20Bras%C3%ADlia%20-%20DF%2C%2070297-400!5e0!3m2!1spt-BR!2sbr!4v1664920484345!5m2!1spt-BR!2sbr" width="1290" height="500" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <%--Contato--%>
                 <div id="divContato" runat="server"></div>
                 <div id="divFinal" runat="server"></div>
             </div>
-        </ContentTemplate>
+        </contenttemplate>
     </asp:UpdatePanel>
 </asp:Content>
