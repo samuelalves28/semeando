@@ -97,7 +97,9 @@
     <Content Include="css\contact-form.css" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="img\2020-11-ensino-infantil-img-001-19112020.png" />
+    <Content Include="img\insta.png" />
     <Content Include="img\Matrículas-e-rematrículas-1024x580.jpg" />
+    <Content Include="img\What.png" />
     <Content Include="index.aspx" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\JavaScript.js" />

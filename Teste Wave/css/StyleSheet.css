@@ -6,7 +6,15 @@ body { font-family: Ubuntu; margin: 0px; padding: 0px; background-color: #EEE; }
 
 .table-hover > tbody > tr:hover { background-color: #010101 !important; }
 
+.colorCopyright {/* color: white;*/ }
 
+.liContato { float: left; margin: 15px 15px 15px 0px; width: 41px; }
+
+.divRedeSocial { margin-left: 15px; width: 30% !important; }
+.divCont { }
+
+
+.divQuadradoContato { background: white; /* width: 35% !important; */ /* position: absolute !important; */ /* display: block; */ top: 15%; left: 1%; border-radius: 10px; rotate: 0deg; box-shadow: 2px 4px 15px 10px black; margin-top: 4%; }
 .divQuadrado { background: white; width: 35% !important; position: absolute !important; display: block; top: 11%; left: 1%; border-radius: 10px; rotate: 0deg; box-shadow: 2px 4px 15px 10px black; }
 .divLetras { font-size: 30px; rotate: 0deg; top: 10px; display: block; }
 .divInfo { rotate: 0deg; top: 1px; }

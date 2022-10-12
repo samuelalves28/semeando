@@ -23,13 +23,13 @@
 
         'divs
         divCabecalho.Attributes.Add("style", "background:" & listaCor(0))
-        'divBanners.Attributes.Add("style", "background:" & listaCor(1))
         divSobre.Attributes.Add("style", "background:" & listaCor(2))
         divDiferenciais.Attributes.Add("style", "background:" & listaCor(3))
         divCardapio.Attributes.Add("style", "background:" & listaCor(4))
-        divLocalizacao.Attributes.Add("style", "background:" & listaCor(5))
         divContato.Attributes.Add("style", "background:" & listaCor(6))
-        divFinal.Attributes.Add("style", "background:" & listaCor(7))
+        'divBanners.Attributes.Add("style", "background:" & listaCor(1))
+        'divLocalizacao.Attributes.Add("style", "background:" & listaCor(5))
+        'divFinal.Attributes.Add("style", "background:" & listaCor(7))
 
         'letras
         divS1.Attributes.Add("style", "color:" & listaCor(0))
